@@ -16,6 +16,7 @@
     "@mastra/core": "^0.5.0",
     "@mastra/mcp": "^0.3.0",
     "@mastra/memory": "^0.2.0",
+    "fastmcp": "^1.20.4",
     "mastra": "^0.3.0",
     "zod": "^3.24.2"
   },

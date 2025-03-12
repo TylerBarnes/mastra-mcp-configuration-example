@@ -4,8 +4,23 @@ import { openai } from "@ai-sdk/openai";
 import path from "path";
 import { Memory } from "@mastra/memory";
 
+// start sse server - in real life this would already be running but want to show using sse and stdio in this example
+import { startMockMCPSSE } from "../mcp/sse";
+
+await startMockMCPSSE();
+
 const mcp = new MCPConfiguration({
   servers: {
+    stockPrice: {
+      command: "pnpx",
+      args: ["tsx", "../../src/mastra/mcp/stock-price.ts"],
+      env: {
+        FAKE_CREDS: "let me in!",
+      },
+    },
+    weather: {
+      url: new URL("http://localhost:8080/sse"),
+    },
     textEditor: {
       command: "pnpx",
       args: [
