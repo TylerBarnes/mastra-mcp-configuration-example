@@ -1,0 +1,27 @@
+{
+  "name": "mastra-basic-mcp-configuration-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.2.3",
+    "@mastra/core": "^0.5.0",
+    "@mastra/mcp": "^0.3.0",
+    "@mastra/memory": "^0.2.0",
+    "mastra": "^0.3.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
